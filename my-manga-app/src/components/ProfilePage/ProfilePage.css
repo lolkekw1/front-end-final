@@ -1,0 +1,14 @@
+.profile-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-avatar {
+    width: 100px; /* Вы можете настроить это значение */
+    height: 100px; /* Сделайте его круглым, если хотите */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Добавьте дополнительные стили, если необходимо */
+  

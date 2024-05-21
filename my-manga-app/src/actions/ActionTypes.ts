@@ -1,0 +1,11 @@
+export const LOGIN_REQUEST: string = 'LOGIN_REQUEST';
+export const LOGIN_SUCCESS: string = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL: string = 'LOGIN_FAIL';
+export const REGISTER_REQUEST: string = 'REGISTER_REQUEST';
+export const REGISTER_SUCCESS: string = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL: string = 'REGISTER_FAIL';
+export const UPDATE_USER: string = 'UPDATE_USER';
+export const LOGOUT: string = 'LOGOUT';
+export const ADD_TO_FAVORITES = 'ADD_TO_FAVORITES';
+export const REMOVE_FROM_FAVORITES = 'REMOVE_FROM_FAVORITES';
+export const FETCH_MANGA = 'FETCH_MANGA';

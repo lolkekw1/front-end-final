@@ -1,0 +1,77 @@
+
+.App-header {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    padding: 10px;
+}
+
+.App-logo {
+    width: 200px;
+    height: auto;
+    margin-right: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    white-space: nowrap;
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    background-color: #333;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #ffc107;
+}

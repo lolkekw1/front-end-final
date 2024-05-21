@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.homepage {
+  padding: 20px;
+}
+
+.manga-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.manga-card {
+  background: #1f1f1f;
+  width: 300px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manga-card:hover {
+  transform: translateY(-5px);
+}
+
+.manga-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.manga-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.manga-card p, .manga-card a {
+  margin-bottom: 10px;
+  color: #b0b0b0;
+}
+
+a {
+  color: #64b5f6;
+  text-decoration: none;
+}
+
+.button-pagination {
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-pagination:hover {
+  background-color: #555;
+}
+
+.button-pagination.active {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+input.search-bar::placeholder {
+  color: #888;
+}
+
+button {
+  background-color: #000000;
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background-color: #3f3f3f;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tag:hover {
+  background-color: #1e88e5;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .manga-card {
+    width: 90%;
+  }
+}

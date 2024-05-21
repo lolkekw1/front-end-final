@@ -1,0 +1,125 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+html {
+    height: 100%;
+    background-color: #121212;
+}
+
+.anime-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.anime-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+
+button {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e0e0e0;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e88e5; 
+}
+
+button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px; 
+}
+
+.tag {
+    background-color: #3f3f3f; 
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.tag:hover {
+    background-color: #1e88e5; 
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
