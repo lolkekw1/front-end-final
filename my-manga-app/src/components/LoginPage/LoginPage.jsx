@@ -4,19 +4,17 @@ import { useNavigate } from 'react-router-dom';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // const [message, setMessage] = useState(''); // Вы можете удалить эту строку
 
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Заданные значения для успешного входа
     const correctEmail = 'kim.a@gmail.com';
     const correctPassword = '12345678';
     
     if (email === correctEmail && password === correctPassword) {
       alert('Вы успешно вошли в систему!');
-      navigate('/profile'); // Переадресация на страницу профиля
+      navigate('/profile');
     } else {
       alert('Неверный email или пароль');
     }

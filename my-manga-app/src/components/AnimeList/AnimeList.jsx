@@ -4,7 +4,7 @@ import './AnimeList.css';
 
 function AnimeList() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [animesPerPage] = useState(10);
+  const [animesPerPage] = useState(10); // количество аниме на страницу
   const [animeData, setAnimeData] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');

@@ -48,8 +48,8 @@ const HomePage = () => {
     if (minDate || maxDate) {
       results = results.filter(manga => {
         const publishedDate = new Date(manga.Published);
-        const minPublishedDate = minDate ? new Date(minDate) : new Date(-8640000000000000); // Use very early date if no minDate
-        const maxPublishedDate = maxDate ? new Date(maxDate) : new Date(8640000000000000); // Use very late date if no maxDate
+        const minPublishedDate = minDate ? new Date(minDate) : new Date(-8640000000000000);
+        const maxPublishedDate = maxDate ? new Date(maxDate) : new Date(8640000000000000);
         return publishedDate >= minPublishedDate && publishedDate <= maxPublishedDate;
       });
     }
@@ -59,7 +59,7 @@ const HomePage = () => {
       );
     }
     setFilteredMangaList(results);
-    setCurrentPage(1); // Возвращаем пользователя на первую страницу после поиска
+    setCurrentPage(1);
   }, [searchTerm, minDate, maxDate, minScore, maxScore, mangaList]);
 
   const handleAddToFavorites = (manga) => {

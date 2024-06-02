@@ -1,14 +1,98 @@
-.profile-header {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .profile-avatar {
-    width: 100px; /* Вы можете настроить это значение */
-    height: 100px; /* Сделайте его круглым, если хотите */
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  /* Добавьте дополнительные стили, если необходимо */
-  
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.profile-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.profile-info, .profile-form, .favorites {
+  background-color: #444;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info p, .profile-form label {
+  margin-bottom: 10px;
+}
+
+.profile-form input, .profile-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+}
+
+.profile-form button, .profile-info button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile-form button:hover, .profile-info button:hover {
+  background-color: #0056b3;
+}
+
+.favorites ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites li {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.favorites li:last-child {
+  border-bottom: none;
+}
+
+.avatar-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.avatar-upload input {
+  display: none;
+}
+
+.avatar-upload label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.avatar-upload label:hover {
+  background-color: #0056b3;
+}

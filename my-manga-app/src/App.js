@@ -2,7 +2,7 @@ import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
-import Header from './components/Header/Header.ts'; // Обратите внимание на импорт Header.ts
+import Header from './components/Header/Header.ts';
 import CatalogPage from './components/CatalogPage/CatalogPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import LoginPage from './components/LoginPage/LoginPage';
@@ -14,7 +14,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <Header /> {/* Обратите внимание на использование JSX для создания компонента */}
+        <Header /> {}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />

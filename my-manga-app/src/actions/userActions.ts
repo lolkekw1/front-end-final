@@ -7,10 +7,8 @@ interface Credentials {
 }
 
 interface UserData {
-  // Определите тип данных о пользователе здесь
 }
 
-// Экшн-криэйторы для входа пользователя
 export const loginRequest = () => ({
   type: types.LOGIN_REQUEST as typeof types.LOGIN_REQUEST,
 });
@@ -25,7 +23,6 @@ export const loginFail = (error: string) => ({
   payload: error,
 });
 
-// Экшн для входа пользователя
 export const loginUser = (credentials: Credentials) => async (dispatch: Dispatch) => {
   dispatch(loginRequest());
   try {
@@ -39,7 +36,6 @@ export const loginUser = (credentials: Credentials) => async (dispatch: Dispatch
     const data = await response.json();
     dispatch(loginSuccess(data));
 
-    // Возвращаем Promise, который разрешается после успешного входа
     return Promise.resolve(data);
   } catch (error) {
     dispatch(loginFail(error.message));
@@ -47,7 +43,6 @@ export const loginUser = (credentials: Credentials) => async (dispatch: Dispatch
   }
 };
 
-// Экшн-криэйторы для регистрации пользователя
 export const registerRequest = () => ({
   type: types.REGISTER_REQUEST as typeof types.REGISTER_REQUEST,
 });
@@ -62,7 +57,6 @@ export const registerFail = (error: string) => ({
   payload: error,
 });
 
-// Экшн для регистрации пользователя
 export const registerUser = (credentials: Credentials) => async (dispatch: Dispatch) => {
   dispatch(registerRequest());
   try {
@@ -76,7 +70,6 @@ export const registerUser = (credentials: Credentials) => async (dispatch: Dispa
     const data = await response.json();
     dispatch(registerSuccess(data));
 
-    // Возвращаем Promise, который разрешается после успешной регистрации
     return Promise.resolve(data);
   } catch (error) {
     dispatch(registerFail(error.message));
@@ -84,13 +77,11 @@ export const registerUser = (credentials: Credentials) => async (dispatch: Dispa
   }
 };
 
-// Экшн для обновления данных пользователя
 export const updateUser = (userData: UserData) => ({
   type: types.UPDATE_USER as typeof types.UPDATE_USER,
   payload: userData,
 });
 
-// Экшн для выхода из системы
 export const logout = () => ({
   type: types.LOGOUT as typeof types.LOGOUT,
 });
